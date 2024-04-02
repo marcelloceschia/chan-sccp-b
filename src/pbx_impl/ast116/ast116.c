@@ -3065,10 +3065,6 @@ DECLARE_PBX_CHANNEL_STRGET(name)
     DECLARE_PBX_CHANNEL_STRGET(linkedid)
     DECLARE_PBX_CHANNEL_STRGET(context)
     DECLARE_PBX_CHANNEL_STRSET(context)
-    DECLARE_PBX_CHANNEL_STRGET(macroexten)
-    DECLARE_PBX_CHANNEL_STRSET(macroexten)
-    DECLARE_PBX_CHANNEL_STRGET(macrocontext)
-    DECLARE_PBX_CHANNEL_STRSET(macrocontext)
     DECLARE_PBX_CHANNEL_STRGET(call_forward)
     DECLARE_PBX_CHANNEL_STRSET(call_forward)
 
@@ -3536,10 +3532,6 @@ const PbxInterface iPbx = {
 	setChannelExten: sccp_astwrap_set_channel_exten,
 	getChannelContext: sccp_astwrap_get_channel_context,
 	setChannelContext: sccp_astwrap_set_channel_context,
-	getChannelMacroExten: sccp_astwrap_get_channel_macroexten,
-	setChannelMacroExten: sccp_astwrap_set_channel_macroexten,
-	getChannelMacroContext: sccp_astwrap_get_channel_macrocontext,
-	setChannelMacroContext: sccp_astwrap_set_channel_macrocontext,
 	getChannelCallForward: sccp_astwrap_get_channel_call_forward,
 	setChannelCallForward: sccp_astwrap_set_channel_call_forward,
 
@@ -3687,10 +3679,6 @@ const PbxInterface iPbx = {
 	.setChannelExten = sccp_astwrap_set_channel_exten,
 	.getChannelContext = sccp_astwrap_get_channel_context,
 	.setChannelContext = sccp_astwrap_set_channel_context,
-	.getChannelMacroExten = sccp_astwrap_get_channel_macroexten,
-	.setChannelMacroExten = sccp_astwrap_set_channel_macroexten,
-	.getChannelMacroContext = sccp_astwrap_get_channel_macrocontext,
-	.setChannelMacroContext = sccp_astwrap_set_channel_macrocontext,
 	.getChannelCallForward = sccp_astwrap_get_channel_call_forward,
 	.setChannelCallForward = sccp_astwrap_set_channel_call_forward,
 
